@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Your Hosted Websites</h2>
+    <ul>
+        {% for project in projects %}
+        <li>
+            <a href="/site/{{ project }}/" target="_blank">View {{ project }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
